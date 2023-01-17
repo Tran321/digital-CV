@@ -1,0 +1,241 @@
+/* Style for laptop screens */
+@media only screen and (min-width: 768px) {
+  /* Begin banner style */
+  #banner {
+    position: relative;
+    background: #000 url("/images/banner.jpg") no-repeat;
+    /*backdrop-filter: brightness(50%);
+    -webkit-backdrop-filter: brightness(50%);*/
+    /*filter: opacity(0.5);*/
+    /*filter: brightness(50%);*/
+    background-position: center;
+    background-size: cover;
+    height: /*350px*/20%;
+  }
+  #name-text-banner {
+    position: absolute;
+    top:/* 25%*/50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /*filter: brightness(100%) !important;*/
+  }
+  /* End banner style*/
+
+  /* Begin nav style */
+  #nav-bar {
+    text-align: center;
+  }
+  #name-text {
+    width: 50px;
+    font-weight: bold;
+    padding: 0;
+  }
+  .c-nav {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    width: 19%;
+    height: 2rem;
+    overflow: hidden;
+    padding-top: 1em;
+  }
+  .right {
+    border-right: 1px solid #f0f0f0;
+  }
+  .left {
+    border-left: 1px solid #f0f0f0;
+  }
+  /* End nav style */
+  /**********************/
+  /* Begin personal info block Style */
+  #about {
+    /* width: 100%;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0 0;
+    line-height: 1rem;
+    font-size: 12px;
+    margin-bottom: 10px;
+    /* overflow: visible;*/
+  }
+  #target {
+    padding-left: 30%;
+    padding-bottom: 17%;
+    padding-right: 5%;
+    background: #f5f5f5;
+    /*  overflow: visible;*/
+  }
+  #personal-info {
+    padding-left: 10%;
+    padding-bottom: 15%;
+    background: #f0f0f0;
+    /*  overflow: visible;*/
+  }
+  .section-title {
+    text-transform: uppercase;
+    line-height: 2rem;
+  }
+  .info {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  /* End personal info block Style */
+  /*********************************/
+
+  /* Begin JobInfo block Style */
+  #job-info {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto auto;
+    gap: 10px;
+    align-items: start;
+    /* grid-row-gap: 20px;*/
+    font-size: 12px;
+  }
+  #job-info div.block-c-job-inf {
+    border: #f7f7f7;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3em 90%;
+    text-align: center;
+  }
+  #job-info .block-c-job-inf .c-job-inf ul li::before {
+    content: "\2022";
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 35px;
+    /*display: inline-block;*/
+    width: 1px;
+    margin-left: -1em;
+    float: left;
+  }
+  .c-job-inf {
+    /*margin-top: 50px;*/
+    padding: 0;
+    /* padding-left: 10px;*/
+    border: none;
+    opacity: 0.7;
+    text-align: left;
+  }
+  .c-job-inf-head {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr;
+    /* margin-bottom: 20px;*/
+  }
+  #hobby .c-job-inf i {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    color: dodgerblue;
+    text-align: center;
+    border: 2px solid dodgerblue;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  /*#hobby > .c-job-inf {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+  }*/
+   #hobby .c-job-inf {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  /* End JobInfo block Style */
+  /*********/
+  /* Begin Certificate block style */
+  #certificate {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  #certificate .container .c-cert {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .c-cert .c-cert-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 2rem 1rem;
+  }
+  .c-cert .c-cert-content p {
+    opacity: 0.7;
+  }
+  /* End Certificate block style */
+  /******/
+  /* Begin Projects block style */
+  .c-project {
+   /* width: 250px;*/
+    border: 1px solid #f0f0f0;
+  }
+  #project .container .container-project {
+    display: grid /*flex*/;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+  }
+  #project .container .container-project .c-project .c-project-name {
+    text-transform: uppercase;
+    font-size: 15px;
+    /*  padding-left: 10px;*/
+    /* width: 345px;*/
+    border: 1px solid #f0f0f0;
+    opacity: 0.7;
+  }
+  #project .container .container-project .c-project-nav > * {
+    display: inline-block;
+    opacity: 0.7;
+    font-size: 12px;
+  }
+  #project .container .container-project table {
+    opacity: 0.7;
+    font-size: 12px;
+  }
+  .c-project-nav {
+    /*  padding-left: 30px;*/
+    padding-bottom: 5px;
+    /* width: 345px;*/
+    border: 1px solid #f0f0f0;
+    font-size: 10px;
+    text-align: center;
+  }
+  #project .container .container-project .c-project table,
+  tr {
+    border: 1px solid #f0f0f0;
+    border-collapse: collapse;
+  }
+  /* End Projects block style */
+  /** FOOTer **/
+  #footer {
+    /* width: 1170px;*/
+    /*margin: 50px 50px;*/
+    background: #f0f0f0;
+    text-align: center;
+    height: 155px;
+  }
+  #footer .container ul li {
+    display: inline-block;
+  }
+  #footer .container ul li i {
+    color: dodgerblue;
+    font-size: 35px;
+  }
+}

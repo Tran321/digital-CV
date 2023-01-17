@@ -1,0 +1,5 @@
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .c-item {
+    margin-bottom: 1rem;
+  }
+}

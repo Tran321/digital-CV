@@ -1,0 +1,49 @@
+/* Global Style */
+html {
+  margin: 0;
+  font-family: "Verdana", Sans-Serif;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  /* opacity: 0.97;*/
+  line-height: 1rem;
+}
+body {
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.15);*/
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+/* List style */
+ul {
+  list-style: none;
+}
+#background-ga {
+  /* height: 500px;*/
+  background-color: #000;
+  opacity: 0.4;
+}
+#footer{
+  text-align: center;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+.dblue {
+  color: dodgerblue;
+}
+.point-level {
+  background: #f7f7f7;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.done-level {
+  background: #199cdb;
+}
+.done-level-highter {
+  height: 3px;
+}
