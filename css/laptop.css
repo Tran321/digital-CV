@@ -3,7 +3,7 @@
   /* Begin banner style */
   #banner {
     position: relative;
-    background: #000 url("images/banner.jpg") no-repeat;
+    background: #000 url("../images/banner.jpg") no-repeat;
     /*backdrop-filter: brightness(50%);
     -webkit-backdrop-filter: brightness(50%);*/
     /*filter: opacity(0.5);*/
