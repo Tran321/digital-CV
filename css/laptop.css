@@ -1,20 +1,9 @@
 /* Style for laptop screens */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   /* Begin banner style */
-  #banner {
-    position: relative;
-    background: #000 url("../images/banner.jpg") no-repeat;
-    /*backdrop-filter: brightness(50%);
-    -webkit-backdrop-filter: brightness(50%);*/
-    /*filter: opacity(0.5);*/
-    /*filter: brightness(50%);*/
-    background-position: center;
-    background-size: cover;
-    height: /*350px*/20%;
-  }
   #name-text-banner {
     position: absolute;
-    top:/* 25%*/50%;
+    top:/* 25%*/ 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -25,22 +14,20 @@
   /* Begin nav style */
   #nav-bar {
     text-align: center;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
   }
   #name-text {
-    width: 50px;
+    width: 19%;
     font-weight: bold;
-    padding: 0;
   }
   .c-nav {
-    display: inline-block;
     font-size: 0.7rem;
-    text-align: center;
     text-transform: uppercase;
     color: black;
+    padding: 1rem;
     width: 19%;
-    height: 2rem;
-    overflow: hidden;
-    padding-top: 1em;
   }
   .right {
     border-right: 1px solid #f0f0f0;
@@ -50,7 +37,7 @@
   }
   /* End nav style */
   /**********************/
-  /* Begin personal info block Style */
+  /* BEGIN PERSONAL INFO BLOCK STYLE */
   #about {
     /* width: 100%;*/
     display: grid;
@@ -87,17 +74,23 @@
   /* End personal info block Style */
   /*********************************/
 
-  /* Begin JobInfo block Style */
+  /* BEGIN JOBINFO BLOCK STYLE */
   #job-info {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+    height: 1300px;
+    display: /*grid*/ flex;
+    /*  grid-template-columns: repeat(3, auto);
     grid-template-rows: auto auto;
     gap: 10px;
-    align-items: start;
+    align-items: start;*/
     /* grid-row-gap: 20px;*/
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: 12px;
   }
   #job-info div.block-c-job-inf {
+    width: /*200px*/ 50%;
     border: #f7f7f7;
     display: grid;
     grid-template-columns: 100%;
@@ -105,18 +98,22 @@
     text-align: center;
   }
   #job-info .block-c-job-inf .c-job-inf ul li::before {
-    content: "\2022";
-    color: dodgerblue;
-    font-weight: bold;
-    font-size: 35px;
-    /*display: inline-block;*/
-    width: 1px;
-    margin-left: -1em;
-    float: left;
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: -1rem;
+    margin-right: 0.3rem;
+    background-color: dodgerblue;
+    border-radius: 50%;
+  }
+  /*fix padding by list style space */
+  .fix-pading {
+    padding-left: 1.8rem;
   }
   .c-job-inf {
     /*margin-top: 50px;*/
-    padding: 0;
+    /*padding: 1rem;*/
     /* padding-left: 10px;*/
     border: none;
     opacity: 0.7;
@@ -148,7 +145,7 @@
     text-align: center;
     padding-top: 30px;
   }*/
-   #hobby .c-job-inf {
+  #hobby .c-job-inf {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -159,7 +156,7 @@
   }
   /* End JobInfo block Style */
   /*********/
-  /* Begin Certificate block style */
+  /* BEGIN CERTIFICATE BLOCK STYLE */
   #certificate {
     font-size: 12px;
     margin-top: 10px;
@@ -181,48 +178,41 @@
   }
   /* End Certificate block style */
   /******/
-  /* Begin Projects block style */
+  /* BEGIN PROJECTS BLOCK STYLE */
   .c-project {
-   /* width: 250px;*/
+    /* width: 250px;*/
     border: 1px solid #f0f0f0;
   }
   #project .container .container-project {
     display: grid /*flex*/;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 1rem;
     text-align: left;
   }
-  #project .container .container-project .c-project .c-project-name {
-    text-transform: uppercase;
-    font-size: 15px;
-    /*  padding-left: 10px;*/
-    /* width: 345px;*/
-    border: 1px solid #f0f0f0;
-    opacity: 0.7;
-  }
-  #project .container .container-project .c-project-nav > * {
-    display: inline-block;
+  #project .container .container-project .c-project-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+    /*align-content: baseline;*/
     opacity: 0.7;
     font-size: 12px;
+    padding: 1.5rem;
+    border: 1px solid #f0f0f0;
   }
   #project .container .container-project table {
     opacity: 0.7;
     font-size: 12px;
-  }
-  .c-project-nav {
-    /*  padding-left: 30px;*/
-    padding-bottom: 5px;
-    /* width: 345px;*/
-    border: 1px solid #f0f0f0;
-    font-size: 10px;
-    text-align: center;
   }
   #project .container .container-project .c-project table,
   tr {
     border: 1px solid #f0f0f0;
     border-collapse: collapse;
   }
-  /* End Projects block style */
+  td {
+    padding: 1rem;
+  }
+  /* END PROJECTS BLOCK STYLE */
   /** FOOTer **/
   #footer {
     /* width: 1170px;*/
