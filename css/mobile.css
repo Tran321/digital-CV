@@ -1,13 +1,6 @@
 /* Style for mobile Screens */
 @media only screen and (max-width: 500px) {
   /* Banner */
-  #banner {
-    position: relative;
-    background: #000 url('../images/banner.jpg') no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: /*350px*/ 20%;
-  }
   #name-text-banner {
     position: absolute;
     top:/* 25%*/ 50%;
@@ -113,24 +106,24 @@
   }
   /*  PROJECTS */
   .c-project {
-    width: 250px;
+    /*width: 250px;*/
     border: 1px solid #f0f0f0;
   }
   #project .container .container-project {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 1rem;
     text-align: left;
   }
-  #project .container .container-project .c-project .c-project-name {
+  /* #project .container .container-project .c-project .c-project-name {
     text-transform: uppercase;
     font-size: 15px;
     padding: 1.5rem;
     /*  padding-left: 10px;*/
-    /* width: 345px;*/
-    border: 1px solid #f0f0f0;
+  /* width: 345px;*/
+  /*border: 1px solid #f0f0f0;
     opacity: 0.7;
-  }
+  }*/
   /*#project .container .container-project .c-project-nav > * {
     display: inline-block;
     opacity: 0.7;
@@ -142,7 +135,7 @@
   }
   .c-project-nav {
     padding: 1.5rem;
-    padding-bottom: 5px;
+    /*padding-bottom: 5px;*/
     /* width: 345px;*/
     border: 1px solid #f0f0f0;
     font-size: 10px;
@@ -152,5 +145,8 @@
   tr {
     border: 1px solid #f0f0f0;
     border-collapse: collapse;
+  }
+  td{
+    padding: 1rem;
   }
 }
