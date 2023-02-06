@@ -1,13 +1,6 @@
 /* Style for Tablet screens */
 @media only screen and (min-width: 500px) and (max-width: 768px) {
   /* Begin banner style */
-  #banner {
-    position: relative;
-    background: #000 url("../images/banner.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: /*350px*/ 20%;
-  }
   #name-text-banner {
     position: absolute;
     top:/* 25%*/ 50%;
@@ -77,21 +70,21 @@
   }
   /* Begin JobInfo block Style */
   #job-info {
-    height: 1500px;
+    height: 1400px;
     display: /*grid*/ flex;
     /*  grid-template-columns: repeat(3, auto);
     grid-template-rows: auto auto;
     gap: 10px;
     align-items: start;*/
     /* grid-row-gap: 20px;*/
-    gap: 20px;
+    gap: 1rem;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
     font-size: 12px;
   }
   #job-info div.block-c-job-inf {
-    width: 200px;
+    width: /*200px*/ 50%;
     border: #f7f7f7;
     display: grid;
     grid-template-columns: 100%;
@@ -143,7 +136,7 @@
     padding-top: 20px;
     font-size: 15px;
   }
-  /* Begin Certificate block style */
+  /* BEGIN CERTIFICATE BLOCK STYLE */
   #certificate {
     font-size: 12px;
     margin-top: 10px;
@@ -170,15 +163,16 @@
   .c-cert p {
     opacity: 0.7;
   }
+  /*/##############*/
   /*  PROJECTS */
   .c-project {
-    width: 250px;
+    /*width: 250px;*/
     border: 1px solid #f0f0f0;
   }
   #project .container .container-project {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 1rem;
     text-align: left;
   }
   #project .container .container-project .c-project .c-project-name {
@@ -194,18 +188,23 @@
     opacity: 0.7;
     font-size: 12px;
   }
-  .c-project-nav {
-    padding: 1.5rem;
-    padding-bottom: 5px;
-    /* width: 345px;*/
-    border: 1px solid #f0f0f0;
-    font-size: 10px;
-    text-align: left;
+  #project .container .container-project .c-project-nav {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+    /*align-content: baseline;*/
+    opacity: 0.7;
+    font-size: 12px;
+    padding: 1.5rem;
+    border: 1px solid #f0f0f0;
   }
   #project .container .container-project .c-project table,
   tr {
     border: 1px solid #f0f0f0;
     border-collapse: collapse;
+  }
+  td{
+    padding: 1rem;
   }
 }
