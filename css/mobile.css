@@ -43,16 +43,30 @@
     text-align: left;
     margin-bottom: 20px;
   }
-  #job-info .block-c-job-inf .c-job-inf ul li::before {
+  /*#job-info .block-c-job-inf .c-job-inf ul li::before {
     content: "\2022";
     color: dodgerblue;
     font-weight: bold;
     font-size: 35px;
     /*display: inline-block;*/
-    width: 1px;
+  /* width: 1px;
     margin-left: -15px;
     margin-top: -10px;
     float: left;
+  }*/
+  #job-info .block-c-job-inf .c-job-inf ul li::before {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: -1rem;
+    margin-right: 0.3rem;
+    background-color: dodgerblue;
+    border-radius: 50%;
+  }
+  /*fix padding by list style space */
+  .fix-pading {
+    padding-left: 1rem;
   }
   .c-job-inf-head {
     display: grid;
@@ -146,7 +160,7 @@
     border: 1px solid #f0f0f0;
     border-collapse: collapse;
   }
-  td{
+  td {
     padding: 1rem;
   }
 }
