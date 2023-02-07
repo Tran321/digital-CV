@@ -89,17 +89,31 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 3em 90%;
-    text-align: center;
+    text-align: left;
   }
-  #job-info .block-c-job-inf .c-job-inf ul li::before {
+  /*#job-info .block-c-job-inf .c-job-inf ul li::before {
     content: "\2022";
     color: dodgerblue;
     font-weight: bold;
     font-size: 35px;
     /*display: inline-block;*/
-    width: 1px;
+   /* width: 1px;
     margin-left: -1em;
     float: left;
+  }*/
+  #job-info .block-c-job-inf .c-job-inf ul li::before {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: -1rem;
+    margin-right: 0.3rem;
+    background-color: dodgerblue;
+    border-radius: 50%;
+  }
+  /*fix padding by list style space */
+  .fix-pading {
+    padding-left: 1.5rem;
   }
   .c-job-inf {
     /*margin-top: 50px;*/
