@@ -1,5 +1,5 @@
 /* Style for Tablet screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 500px) and (max-width: 768px) {
   /* Begin banner style */
   #name-text-banner {
     position: absolute;
