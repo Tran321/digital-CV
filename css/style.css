@@ -10,7 +10,7 @@ html {
   line-height: 1rem;
 }
 body {
-  max-width: 1200px;
+  max-width: 5120px;//max width for largest screens
   text-align: center;
   overflow-x: hidden;
   /* background-color: rgba(0, 0, 0, 0.15);*/
